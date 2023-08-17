@@ -72,7 +72,7 @@ const Nav = () => {
       className={classNames(
         "sticky",
         scrolled ? "shadow-md" : "",
-        "top-0 flex justify-between items-center w-full p-3 bg-transparent"
+        "top-0 flex z-20 justify-between items-center w-full p-3 bg-transparent"
       )}
     >
       <div className="flex max-[400px]:w-[100%] w-[55%] xl:w-[60%] lg:w-[70%] justify-between">
