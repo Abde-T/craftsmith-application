@@ -19,7 +19,7 @@ module.exports = {
         'black-': '#242424',
         'grayish': '#e6e6e7',
         'Footer-black': "#000000",
-        'red': '' //untill we agree on one
+        'orange-': '#D18700' //untill we agree on one
       }
     },
   },
