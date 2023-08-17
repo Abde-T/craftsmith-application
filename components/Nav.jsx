@@ -18,7 +18,7 @@ const DropDown = ({ element, toggleDropdown, dropdown, isOpen }) => {
           {element.map((e, index) => (
             <Link
               href="/"
-              className="dropdown_link w-full outline_btn"
+              className="dropdown_link w-full outline_btn border border-black-"
               key={index}
               onClick={toggleDropdown}
             >
@@ -43,15 +43,17 @@ const Nav = () => {
     }
   };
 
-  const [navColor, setNavColor] = useState("#242424");
+  const [navColor, setNavColor] = useState("#24242400");
   const [textColor, setTextColor] = useState("#e6e6e7");
+  const [btnColor, setBtnColor] = useState("#24242400");
   const [scrolled, setScrolled] = useState(false);
 
   const listenScrollEvent = () => {
     // Change colors when scroll down
     // Check if scrolled
     const scrollThreshold = 10;
-    window.scrollY > 10 ? setNavColor("#fff") : setNavColor("#242424");
+    window.scrollY > 10 ? setBtnColor("#242424") : setBtnColor("#24242400");
+    window.scrollY > 10 ? setNavColor("#fff") : setNavColor("#24242400");
     window.scrollY > 10 ? setTextColor("#242424") : setTextColor("#e6e6e7");
     setScrolled(window.scrollY > scrollThreshold);
   };
@@ -70,9 +72,8 @@ const Nav = () => {
       }}
       // only show shadow if scrolled down (white background)
       className={classNames(
-        "sticky",
         scrolled ? "shadow-md" : "",
-        "top-0 flex z-20 justify-between items-center w-full p-3 bg-transparent"
+        "top-0 fixed flex z-20 justify-between items-center w-full p-3 bg-transparent"
       )}
     >
       <div className="flex max-[400px]:w-[100%] w-[55%] xl:w-[60%] lg:w-[70%] justify-between">
@@ -106,7 +107,11 @@ const Nav = () => {
                 <button
                   type="button"
                   onClick={() => handleDropdownToggle(1)}
-                  className=" w-full black_btn"
+                  style={{ backgroundColor: btnColor, transition: "all 300ms" }}
+                  className={classNames(
+                    scrolled ? "border" : "",
+                    "w-full black_btn  border-black"
+                  )}
                 >
                   Crafts
                 </button>
@@ -121,8 +126,11 @@ const Nav = () => {
                 <button
                   type="button"
                   onClick={() => handleDropdownToggle(2)}
-                  className=" w-full black_btn"
-                >
+                  style={{ backgroundColor: btnColor, transition: "all 300ms" }}
+                  className={classNames(
+                    scrolled ? "border" : "",
+                    "w-full black_btn  border-black-"
+                  )}                >
                   Tools
                 </button>
                 <DropDown
@@ -136,8 +144,11 @@ const Nav = () => {
                 <button
                   type="button"
                   onClick={() => handleDropdownToggle(3)}
-                  className=" w-full black_btn"
-                >
+                  style={{ backgroundColor: btnColor, transition: "all 300ms" }}
+                  className={classNames(
+                    scrolled ? "border" : "",
+                    "w-full black_btn  border-black-"
+                  )}                >
                   Countries
                 </button>
                 <DropDown
@@ -207,12 +218,8 @@ const Nav = () => {
                       />
                     </div>
                     <div className="flex">
-                      <NotificationsIcon
-                        className="button-hover cursor-pointer"
-                      />
-                      <p
-                        className="font-extrabold hover:text-orange- cursor-pointer"
-                      >
+                      <NotificationsIcon className="button-hover cursor-pointer" />
+                      <p className="font-extrabold hover:text-orange- cursor-pointer">
                         Notifications
                       </p>
                     </div>
@@ -237,7 +244,7 @@ const Nav = () => {
                 <div className="dropdown1">
                   <Link
                     href="/"
-                    className="w-full outline_btn"
+                    className="w-full outline_btn border border-black-"
                     onClick={() => handleDropdownToggle(6)}
                   >
                     My Profile
@@ -245,7 +252,7 @@ const Nav = () => {
 
                   <Link
                     href="/"
-                    className="w-full black_btn"
+                    className="w-full black_btn bg-black- border border-black-"
                     onClick={() => handleDropdownToggle(6)}
                   >
                     Create Post
@@ -253,7 +260,7 @@ const Nav = () => {
                   <button
                     type="button"
                     onClick={() => handleDropdownToggle(6)}
-                    className=" w-full black_btn"
+                    className=" w-full black_btn bg-black- border border-black-"
                   >
                     Sign Out
                   </button>

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Landing = () => {
     return (
-        <section id="landing" className="relative md:bg-center bg-right bg-cover flex items-center justify-center p-6 bg-[url('/assets/blacksmith1.jpg')]">
+        <section id="landing" className="relative h-[100vh] md:bg-center sm:bg-right bg-[600px] bg-cover flex items-center justify-center p-6 bg-[url('/assets/blacksmith1.jpg')]">
         <span id="blackOverlay" className="w-full h-full absolute opacity-30 md:opacity-20 bg-black"></span>
             <div id="landing-content" className='z-10 max-w-screen-lg lg:mr-80 flex items-center justify-center flex-col lg:flex-row '>
                 <div id="landing-texts" className=' max-w-[650px] h-full break-words flex flex-col items-center justify-center lg:mr-24 sm:mr-0  lg:items-start md:items-center'>
