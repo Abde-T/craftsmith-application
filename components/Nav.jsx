@@ -155,7 +155,7 @@ const Nav = () => {
                 className=" w-[100%] pl-4 p-2 -ml-2 focus:outline-none  text-black- border-none bg-transparent placeholder-black- "
               />
               <SearchIcon
-                className="outline-btn hover:text-rose-500"
+                className="outline-btn hover:text-orange-"
                 color="action"
               />
             </div>
@@ -194,7 +194,7 @@ const Nav = () => {
                         onClick={() => handleDropdownToggle(4)}
                       />
                       <p
-                        className="font-extrabold hover:text-rose-500 ml-2 cursor-pointer"
+                        className="font-extrabold hover:text-orange- ml-2 cursor-pointer"
                         onClick={() => handleDropdownToggle(4)}
                       >
                         Language
@@ -211,7 +211,7 @@ const Nav = () => {
                         className="button-hover cursor-pointer"
                       />
                       <p
-                        className="font-extrabold hover:text-rose-500 cursor-pointer"
+                        className="font-extrabold hover:text-orange- cursor-pointer"
                       >
                         Notifications
                       </p>
