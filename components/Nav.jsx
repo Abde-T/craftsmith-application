@@ -32,7 +32,7 @@ const DropDown = ({ element, toggleDropdown, dropdown, isOpen }) => {
 };
 
 const Nav = () => {
-  const user = true;
+  const user = false;
   const [openDropdownIndex, setOpenDropdownIndex] = useState(0);
 
   const handleDropdownToggle = (index) => {
@@ -159,7 +159,7 @@ const Nav = () => {
                 />
               </div>
             </div>
-            <div className="  ml-2 flex lg:w-[50%] w-[100%] px-2 items-center bg-grayish rounded-lg">
+            <div className="  ml-2 flex lg:w-[50%] w-[90%] px-2 items-center bg-grayish rounded-lg">
               <input
                 type="text"
                 placeholder="search"
@@ -277,8 +277,9 @@ const Nav = () => {
             >
               Log in
             </button>
-            <button type="button" className="black_btn">
-              Sign up
+            <button type="button" 
+            className=" button-hover black_btn" style={{ color: textColor }}>
+              sign up
             </button>
           </>
         )}
