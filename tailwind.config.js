@@ -20,6 +20,9 @@ module.exports = {
         'grayish': '#e6e6e7',
         'Footer-black': "#000000",
         'orange-': '#D18700' //untill we agree on one
+      },
+      boxShadow: {
+        '3xl': '0px 0px 16px 0px rgba(0, 0, 0)',
       }
     },
   },
