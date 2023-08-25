@@ -110,7 +110,7 @@ const Nav = () => {
                   style={{ backgroundColor: btnColor, transition: "all 300ms" }}
                   className={classNames(
                     scrolled ? "border" : "",
-                    "w-full black_btn  border-black"
+                    "w-full black_btn  border-black outline outline-1"
                   )}
                 >
                   Crafts
@@ -129,7 +129,7 @@ const Nav = () => {
                   style={{ backgroundColor: btnColor, transition: "all 300ms" }}
                   className={classNames(
                     scrolled ? "border" : "",
-                    "w-full black_btn  border-black-"
+                    "w-full black_btn  border-black- outline  outline-1"
                   )}                >
                   Tools
                 </button>
@@ -147,7 +147,7 @@ const Nav = () => {
                   style={{ backgroundColor: btnColor, transition: "all 300ms" }}
                   className={classNames(
                     scrolled ? "border" : "",
-                    "w-full black_btn  border-black-"
+                    "w-full black_btn  border-black outline  outline-1"
                   )}                >
                   Countries
                 </button>
