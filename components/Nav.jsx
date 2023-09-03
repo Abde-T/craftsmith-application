@@ -9,6 +9,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import { languages, crafts, tools, countries } from "@constants/index";
 import classNames from "classnames";
+import LoginDropDown from "./LoginDropDown";
 
 const DropDown = ({ element, toggleDropdown, dropdown, isOpen }) => {
   return (
@@ -31,9 +32,18 @@ const DropDown = ({ element, toggleDropdown, dropdown, isOpen }) => {
   );
 };
 
+
+
 const Nav = () => {
   const user = false;
   const [openDropdownIndex, setOpenDropdownIndex] = useState(0);
+  const [loginClicked, setLoginClicked] = useState(false)
+
+  const handleLoginClick = () => {
+    setLoginClicked(!loginClicked)
+   
+  }
+
 
   const handleDropdownToggle = (index) => {
     if (openDropdownIndex === index) {
@@ -65,10 +75,13 @@ const Nav = () => {
   }, []);
 
   return (
+    <>
+   
     <nav
       style={{
         backgroundColor: navColor,
         transition: "all 300ms",
+        
       }}
       // only show shadow if scrolled down (white background)
       className={classNames(
@@ -76,6 +89,7 @@ const Nav = () => {
         "top-0 fixed flex z-20 justify-between items-center w-full p-3 bg-transparent"
       )}
     >
+      
       <div className="flex max-[400px]:w-[100%] w-[55%] xl:w-[60%] lg:w-[70%] justify-between">
         <div className="flex sm:w-[200px] w-[50px] ">
           <Link href="/" className="flex gap-2 justify-center items-center">
@@ -274,17 +288,26 @@ const Nav = () => {
               type="button"
               className="button-hover mr-5 outline_btn"
               style={{ color: textColor }}
+              onClick={handleLoginClick}
             >
-              Log in
+              Log In
             </button>
             <button type="button" 
             className=" button-hover black_btn" style={{ color: textColor }}>
-              sign up
+              Sign Up
             </button>
           </>
         )}
       </div>
     </nav>
+    <LoginDropDown isVisible={loginClicked} >
+    <div className="text-black p-4 ">
+      <h2>Login test</h2>
+     
+      
+    </div>
+  </LoginDropDown>
+    </>
   );
 };
 

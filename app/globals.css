@@ -81,6 +81,11 @@ body{
   @apply flex-1 flex sm:justify-end justify-center max-sm:mt-4 gap-10;
 }
 
+.login-dropdown{
+  margin-top: 60px;
+  transition: all 300ms ease-in-out;
+}
+
 /* Change button text color on hover */
 .button-hover:hover{
   /* #f50057 */

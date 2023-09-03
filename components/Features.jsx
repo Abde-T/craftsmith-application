@@ -41,38 +41,38 @@ const Features = () => {
                 <li className="py-2">
                   <div className="flex items-center">
                     <div>
-                      <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-black- bg-black- mr-3">
+                      <span className="text-xs font-semibold inline-block py-3 px-3 uppercase rounded-full text-black- bg-black- mr-3">
                         <BuildIcon className="text-white text-sm"/>
                       </span>
                     </div>
                     <div>
-                      <h4 className="text-gray-600">
+                      <h5 className="text-black-">
                       Lorem ipsum
-                      </h4>
+                      </h5>
                     </div>
                   </div>
                 </li>
                 <li className="py-2">
                   <div className="flex items-center">
                     <div>
-                      <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-black- bg-black- mr-3">
+                      <span className="text-xs font-semibold inline-block py-3 px-3 uppercase rounded-full text-black- bg-black- mr-3">
                         <CarpenterIcon className="text-white text-sm" />
                       </span>
                     </div>
                     <div>
-                      <h4 className="text-gray-600">Lorem ipsum</h4>
+                      <h5 className="text-black-">Lorem ipsum</h5>
                     </div>
                   </div>
                 </li>
                 <li className="py-2">
                   <div className="flex items-center">
                     <div>
-                      <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-black- bg-black- mr-3">
+                      <span className="text-xs font-semibold inline-block py-3 px-3 uppercase rounded-full text-black- bg-black- mr-3">
                         <ConstructionIcon className="text-white text-sm" />
                       </span>
                     </div>
                     <div>
-                      <h4 className="text-gray-600">Lorem ipsum</h4>
+                      <h5 className="text-black-">Lorem ipsum</h5>
                     </div>
                   </div>
                 </li>
