@@ -301,11 +301,6 @@ const Nav = () => {
       </div>
     </nav>
     <LoginDropDown isVisible={loginClicked} >
-    <div className="text-black p-4 ">
-      <h2>Login test</h2>
-     
-      
-    </div>
   </LoginDropDown>
     </>
   );
