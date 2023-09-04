@@ -32,11 +32,7 @@ const Features = () => {
           </div>
           <div className="w-full md:w-5/12 ml-auto mr-auto px-4">
             <div className="md:pr-12">
-              <h3 className="text-3xl font-semibold">Lorem ipsum dolor</h3>
-              <p className="mt-4 text-lg leading-relaxed text-gray-600">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure
-                quod quasi, voluptatibus odit modi unde.
-              </p>
+              <h3 className="text-3xl font-semibold">Get exposure for your work and connect with other crafters.</h3>
               <ul className="list-none mt-6">
                 <li className="py-2">
                   <div className="flex items-center">
@@ -47,7 +43,7 @@ const Features = () => {
                     </div>
                     <div>
                       <h5 className="text-black-">
-                      Lorem ipsum
+                      Pursue your passion for creating.
                       </h5>
                     </div>
                   </div>
@@ -60,7 +56,7 @@ const Features = () => {
                       </span>
                     </div>
                     <div>
-                      <h5 className="text-black-">Lorem ipsum</h5>
+                      <h5 className="text-black-">Share your unique talents with the world.</h5>
                     </div>
                   </div>
                 </li>
@@ -72,7 +68,7 @@ const Features = () => {
                       </span>
                     </div>
                     <div>
-                      <h5 className="text-black-">Lorem ipsum</h5>
+                      <h5 className="text-black-">Build a successful handmade business.</h5>
                     </div>
                   </div>
                 </li>
