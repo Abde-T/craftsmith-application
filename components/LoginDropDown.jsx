@@ -1,24 +1,22 @@
 const LoginDropDown = ({ isVisible }) => {
-  return (
-    isVisible && (
-      <div className="absolute flex justify-end right-10 mt-16 w-60 z-50">
-        <div className=" shadow-lg p-4 space-y-3 ">
-          <input
-            type="email"
-            className="w-full border border-black rounded-lg p-2"
-            placeholder="Email"
-          />
-          <input
-            type="password"
-            className="w-full border border-black rounded-lg p-2"
-            placeholder="Password"
-          /> 
-          <button className="text-white border border-white rounded-lg p-2 ml-16">Submit</button> 
+    return (
+      isVisible && (
+        <div className="login-dropdown fixed top-0 left-0 w-full h-full bg-white z-50">
+          <div className="flex justify-around pt-48 text-4xl font-bold">
+          <section className="h-24 border-b-2 border-black"> 
+            <div>
+              <h1>Sign In as Craftsman → </h1>
+            </div>
+            </section>
+            <section className="h-24 border-b-2 border-black">
+            <div>
+              <h1>Sign In to search Craftsmen → </h1>
+            </div>
+          </section>
+          </div>
         </div>
-        
-      </div>
-    )
-  );
-};
+      )
+    );
+  };
 
-export default LoginDropDown;
+  export default LoginDropDown
