@@ -23,7 +23,7 @@ body{
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #242424;
+  background: rgb(36, 36, 36);
   
 }
 
