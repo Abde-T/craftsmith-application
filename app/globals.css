@@ -29,7 +29,7 @@ body{
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #b81435;
+  background: #ce8908b2;
 }
 
 .black_btn {

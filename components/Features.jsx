@@ -4,7 +4,7 @@ import ConstructionIcon from "@mui/icons-material/Construction";
 import BuildIcon from '@mui/icons-material/Build';
 const Features = () => {
   return (
-    <section className="relative py-20 ">
+    <section className="relative py-20 bg-[#ce8908b2]">
       <div
         className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden "
         style={{ height: "80px" }}

@@ -22,7 +22,7 @@ module.exports = {
         'orange-': '#D18700' //untill we agree on one
       },
       boxShadow: {
-        '3xl': '0px 0px 16px 0px rgba(0, 0, 0)',
+        '3xl': '0px 0px 8px 0px rgba(0, 0, 0)',
       }
     },
   },
