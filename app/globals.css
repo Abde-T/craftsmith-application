@@ -10,6 +10,19 @@ body{
   max-height: fit-content;
   min-height: 85vh;
 }
+/* .container {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 16px; 
+  padding-right: 16px;
+} */
+
+
+
+
+
+
 
 /* width */
 ::-webkit-scrollbar {
