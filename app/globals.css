@@ -23,13 +23,13 @@ body{
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #242424;
+  background: rgb(36, 36, 36);
   
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #b81435;
+  background: #ce8908b2;
 }
 
 .black_btn {

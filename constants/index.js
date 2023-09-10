@@ -57,7 +57,7 @@ export const craftsmanship = [
   },
   {
     name: "Swordsmith",
-    logo: "/assets/swordsmith .png",
+    logo: "/assets/swordsmith.png",
   },
 ];
 

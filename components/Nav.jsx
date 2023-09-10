@@ -63,7 +63,7 @@ const Nav = () => {
     // Check if scrolled
     const scrollThreshold = 10;
     window.scrollY > 10 ? setBtnColor("#242424") : setBtnColor("#24242400");
-    window.scrollY > 10 ? setNavColor("#fff") : setNavColor("#24242400");
+    window.scrollY > 10 ? setNavColor("#ffffffec") : setNavColor("#24242400");
     window.scrollY > 10 ? setTextColor("#242424") : setTextColor("#e6e6e7");
     setScrolled(window.scrollY > scrollThreshold);
   };

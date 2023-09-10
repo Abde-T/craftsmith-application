@@ -19,10 +19,11 @@ module.exports = {
         'black-': '#242424',
         'grayish': '#e6e6e7',
         'Footer-black': "#000000",
-        'orange-': '#D18700' //untill we agree on one
+        'orange-': '#ce8908b2' //untill we agree on one
       },
       boxShadow: {
-        '3xl': '0px 0px 16px 0px rgba(0, 0, 0)',
+        '3xl': '0px 0px 8px 0px rgba(36, 36, 36)',
+        '4xl': ' 2.5px 2.5px 1px 0px rgba(36, 36, 36, 0.788), -2.5px -2.5px 2px 1px rgba(206, 137, 8, 0.698)',
       }
     },
   },

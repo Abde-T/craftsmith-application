@@ -11,11 +11,8 @@ export default function Home() {
     <>
     
      <Landing/>
-     <div className='orange_gradient'>
-  
      <Services/>
      <Features />
-     </div>
      <Categories/>
      <Footer />
     </>
