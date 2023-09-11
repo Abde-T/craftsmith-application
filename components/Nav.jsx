@@ -300,7 +300,7 @@ const Nav = () => {
         )}
       </div>
     </nav>
-    <LoginDropDown isVisible={loginClicked} >
+    <LoginDropDown isVisible={loginClicked} setIsVisible={setLoginClicked} >
   </LoginDropDown>
     </>
   );
