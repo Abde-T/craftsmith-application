@@ -28,8 +28,8 @@ const Crafts = () => {
                   Ut enim ad minim veniam, quis nostrud exercitation ullamco.
                 </p>
                 <div>
-                  <button class="card__button">Live Demo</button>
-                  <button class="card__button secondary">Source Code</button>
+                  <button class="card__button">See More</button>
+                  <button class="card__button secondary">Buy</button>
                 </div>
               </div>
             </div>
@@ -51,8 +51,8 @@ const Crafts = () => {
                   Ut enim ad minim veniam, quis nostrud exercitation ullamco.
                 </p>
                 <div>
-                  <button class="card__button">Live Demo</button>
-                  <button class="card__button secondary">Source Code</button>
+                  <button class="card__button">See More</button>
+                  <button class="card__button secondary">Buy</button>
                 </div>
               </div>
             </div>
@@ -73,8 +73,8 @@ const Crafts = () => {
                   Ut enim ad minim veniam, quis nostrud exercitation ullamco.
                 </p>
                 <div>
-                  <button class="card__button">Live Demo</button>
-                  <button class="card__button secondary">Source Code</button>
+                  <button class="card__button">See More</button>
+                  <button class="card__button secondary">Buy</button>
                 </div>
               </div>
             </div>
