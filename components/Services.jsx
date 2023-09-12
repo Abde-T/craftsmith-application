@@ -17,8 +17,8 @@ const Services = () => {
             <p className="text-lg font-semibold leading-relaxed mt-4 mb-4 text-center text-gray-700 mb-6">
             Shop for handmade crafts with peace of mind knowing that you're supporting local artisans.
             </p>
-          <div className="flex flex-wrap w-full ">
-          <div className=" mx-2 w-full sm:w-[46%] md:w-[45%] lg:w-[30%] text-center">
+          <div className="flex flex-wrap md:flex-no-wrap w-full ">
+          <div className=" lg:mr-6 mx-2 w-full sm:w-[46%] md:w-[45%] lg:w-[30%] text-center">
             <div className=" flex flex-col min-w-0 xl:h-[250px] break-words w-full mb-8 shadow-3xl rounded-md">
               <div className="sm:px-1 sm:py-2 lg:px-4 lg:py-8 px-4 py-8 flex-auto">
                 <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-black-">
@@ -29,7 +29,7 @@ const Services = () => {
             </div>
           </div>
 
-          <div className="mx-2 w-full sm:w-[48%] md:w-[45%] lg:w-[30%] text-center">
+          <div className=" lg:mr-6 mx-2 w-full sm:w-[48%] md:w-[45%] lg:w-[30%] text-center">
             <div className=" flex flex-col min-w-0  xl:h-[250px] break-words backdrop-blur-md w-full mb-8 shadow-3xl rounded-md">
               <div className="sm:px-1 sm:py-2 lg:px-4 lg:py-8 px-4 py-8 flex-auto">
                 <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-black-">
@@ -40,7 +40,7 @@ const Services = () => {
             </div>
           </div>
 
-          <div className="mx-2 w-full sm:w-[100%] lg:w-[30%] text-center">
+          <div className=" lg:mr-6 mx-2 w-full sm:w-[100%] lg:w-[30%] text-center">
             <div className=" flex flex-col min-w-0 xl:h-[250px] break-words backdrop-blur-md w-full mb-8 shadow-3xl rounded-md">
               <div className="sm:px-1 sm:py-2 lg:px-4 lg:py-8 px-4 py-8 flex-auto">
                 <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-black-">
