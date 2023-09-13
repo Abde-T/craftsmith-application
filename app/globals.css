@@ -109,7 +109,48 @@ body{
 
 /* text sizes */
 
+/* cards */
 
+.card {
+  @apply relative max-h-[520px] max-w-[300px] my-3 mx-2  flex items-center bg-[#f2f2f2] justify-center overflow-hidden shadow-[0_0_0_5px_#ffffff80] transition-all duration-[0.6s] ease-[cubic-bezier(0.175,0.885,0.32,1.275)] rounded-[10px] hover:shadow-[0_8px_16px_rgba(255,255,255,0.2)] hover:scale-105;
+  perspective: 10000px;
+}
+.card img {
+  @apply  transition-all duration-[0.7s] ease-[cubic-bezier(0.175,0.885,0.32,1.275)] ;
+}
+.card__image {
+  @apply w-full h-full;
+}
+.card__content {
+  @apply absolute flex flex-col justify-center w-full h-full box-border bg-[#f2f2f2] origin-bottom transition-all duration-[0.65s] ease-[cubic-bezier(0.175,0.885,0.32,1.275)] p-5 ;
+  transform: rotateX(-90deg);
+}
+.card:hover .card__content {
+  transform: rotateX(0deg);
+  height: auto;
+}
+.card:hover {
+  height: 390px;
+  overflow-y: hidden
+}
+.card__title {
+  @apply text-xl text-[#333] font-bold m-0 text-start;
+}
+.card:hover img {
+  scale: 0;
+  border-radius: 100%;
+}
+.card__description {
+  @apply text-xs text-[#777] leading-[1.4] mx-0 my-2.5;
+}
+.card__button {
+  @apply text-[white] p-[5px]  m-1 rounded-md border-[none];
+  background: #242424;
+}
+.secondary {
+  @apply text-[#242424] border border-[#242424];
+  background: transparent;
+}
 
 
 

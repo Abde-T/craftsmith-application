@@ -2,7 +2,7 @@ import React from "react";
 import { craftsmanship } from "@constants/index";
 const Categories = () => {
   return (
-    <section className="pt-20 pb-12">
+    <section className="pt-20 mb-5 pb-12">
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap justify-center text-center mb-24">
           <div className="w-full lg:w-6/12 px-4">

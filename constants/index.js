@@ -90,3 +90,23 @@ export const footerLinks = [
     ],
   },
 ];
+
+
+export const Temp = [
+  {
+    name: "temp1",
+    logo: "/assets/blacksmith.jpg",
+  },
+  {
+    name: "temp2",
+    logo: "/assets/blacksmith1.jpg",
+  },
+  {
+    name: "temp3",
+    logo: "/assets/carpenter.jpg",
+  },
+  {
+    name: "temp4",
+    logo: "/assets/tools.png",
+  },
+];
