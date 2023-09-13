@@ -8,12 +8,12 @@ const Crafts = () => {
     <div className="h-full w-full bg-black- flex justify-center">
       <div className=" w-[1400px] p-6">
         <Masonry
-          columns={{ xs: 2, sm: 2, md: 2, lg: 4, xl: 5 }}
+          columns={{ xs: 2, sm: 2, md: 2, lg: 4, xl: 4 }}
           spacing={{ xs: 1, sm: 2, md: 3 }}
-          height={40}
+          defaultHeight={450}
         >
           {Temp.map((e, index) => (
-            <div class="card">
+            <div class="card" key={index}>
               <img
                 alt={e.name}
                 src={e.logo}
@@ -23,6 +23,12 @@ const Crafts = () => {
               <div class="card__content">
                 <p class="card__title"> Title</p>
                 <p class="card__description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco.
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   Ut enim ad minim veniam, quis nostrud exercitation ullamco.
@@ -36,7 +42,7 @@ const Crafts = () => {
           ))}
           {/* temp code to fill up crafts section*/}
           {Temp.reverse().map((e, index) => (
-            <div class="card">
+            <div class="card" key={index}>
               <img
                 alt={e.name}
                 src={e.logo}
@@ -58,7 +64,7 @@ const Crafts = () => {
             </div>
           ))}
           {Temp.map((e, index) => (
-            <div class="card">
+            <div class="card" key={index}>
               <img
                 alt={e.name}
                 src={e.logo}
