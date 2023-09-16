@@ -112,7 +112,7 @@ body{
 /* cards */
 
 .card {
-  @apply relative max-h-[520px] max-w-[300px] my-3 mx-2  flex items-center bg-[#f2f2f2] justify-center overflow-hidden shadow-[0_0_0_5px_#ffffff80] transition-all duration-[0.6s] ease-[cubic-bezier(0.175,0.885,0.32,1.275)] rounded-[10px] hover:shadow-[0_8px_16px_rgba(255,255,255,0.2)] hover:scale-105;
+  @apply relative max-h-[520px] max-w-[300px] mb-5 mx-2  flex items-center bg-[#f2f2f2] justify-center overflow-hidden shadow-[0_0_0_5px_#ffffff80] transition-all duration-[0.6s] ease-[cubic-bezier(0.175,0.885,0.32,1.275)] rounded-[10px] hover:shadow-[0_8px_16px_rgba(255,255,255,0.2)] hover:scale-105;
   perspective: 10000px;
 }
 .card img {
@@ -122,7 +122,7 @@ body{
   @apply w-full h-full;
 }
 .card__content {
-  @apply absolute flex flex-col justify-center w-full h-full box-border bg-[#f2f2f2] origin-bottom transition-all duration-[0.65s] ease-[cubic-bezier(0.175,0.885,0.32,1.275)] p-5 ;
+  @apply absolute flex flex-col justify-around w-full min-h-full box-border bg-[#f2f2f2] origin-bottom transition-all duration-[0.65s] ease-[cubic-bezier(0.175,0.885,0.32,1.275)] p-2 ;
   transform: rotateX(-90deg);
 }
 .card:hover .card__content {
@@ -130,7 +130,7 @@ body{
   height: auto;
 }
 .card:hover {
-  height: 390px;
+  height: 450px;
   overflow-y: hidden
 }
 .card__title {
@@ -141,7 +141,7 @@ body{
   border-radius: 100%;
 }
 .card__description {
-  @apply text-xs text-[#777] leading-[1.4] mx-0 my-2.5;
+  @apply text-xs text-[#242424] leading-[1.4] mx-0 my-2.5;
 }
 .card__button {
   @apply text-[white] p-[5px]  m-1 rounded-md border-[none];
@@ -154,4 +154,42 @@ body{
 
 
 
+.masonry {
+  @apply gap-x-[50px] text-[0.85em] p-0;
+  /* Masonry container */
+  -webkit-column-count: 4;
+  -moz-column-count: 4;
+  column-count: 4;
+  -webkit-column-gap: 1em;
+  -moz-column-gap: 1em;
+  -moz-column-gap: 1.5em;
+  -webkit-column-gap: 1.5em;
+  
+}
 
+
+@media (min-width: 320px) {
+  .masonry {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 1px;
+    -moz-column-gap: 1px;
+    -moz-column-gap: 1.5px;
+    -webkit-column-gap: 1.5px;
+  }
+}
+@media (min-width: 750px) {
+  .masonry {
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3;
+  }
+}
+@media only screen and (min-width: 1201px) {
+  .masonry {
+    -moz-column-count: 4;
+    -webkit-column-count: 4;
+    column-count: 4;
+  }
+}
