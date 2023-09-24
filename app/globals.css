@@ -166,10 +166,12 @@ body{
 
 .css-1akqbs9-MuiPaper-root-MuiAppBar-root{
   background: #242424;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.164);
 }
 .css-wa5fuu-MuiListItemIcon-root, .css-i4bv87-MuiSvgIcon-root {
   color: white
 }
+
 
 .masonry {
   @apply gap-x-[50px] text-[0.85em] p-0;
