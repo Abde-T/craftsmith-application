@@ -150,8 +150,27 @@ body{
 .secondary {
   @apply text-[#242424] border border-[#242424];
   background: transparent;
+  
 }
 
+.css-12i7wg6-MuiPaper-root-MuiDrawer-paper{
+  position: absolute;
+  background-color: #242424;
+  color: rgba(255, 255, 255, 0.87);
+  box-shadow: none;
+  height: 100%;
+  z-index: 10;
+  -webkit-overflow-scrolling: touch;
+  border-right: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.css-1akqbs9-MuiPaper-root-MuiAppBar-root{
+  background: #242424;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.164);
+}
+.css-wa5fuu-MuiListItemIcon-root, .css-i4bv87-MuiSvgIcon-root {
+  color: white
+}
 
 
 .masonry {
@@ -168,11 +187,13 @@ body{
 }
 
 
+
+
 @media (min-width: 320px) {
   .masonry {
-    -moz-column-count: 2;
-    -webkit-column-count: 2;
-    column-count: 2;
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+    column-count: 1;
     -webkit-column-gap: 1px;
     -moz-column-gap: 1px;
     -moz-column-gap: 1.5px;
